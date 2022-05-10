@@ -1,0 +1,52 @@
+:root {
+  --base: #005C53;
+  --spacing: 10px;
+  --blur: 10px;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  background-color: black;
+  padding: 40px;
+}
+
+.controls {
+  width: 60%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.controls label {
+  font-family: monospace;
+  color: white;
+}
+
+.image {
+  padding: var(--spacing);
+  background-color: var(--base);
+  filter: blur(var(--blur));
+  width: 60%;
+  size-adjust: cover;
+}
+
+.title {
+  font-size: 30px;
+  font-family: monospace;
+  color: white;
+}
+
+.title span{
+  color: var(--base);
+}
